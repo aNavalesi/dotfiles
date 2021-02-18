@@ -1,0 +1,50 @@
+[yes]
+full_text=Slackware Current | i3-gaps
+
+
+
+
+[net]
+label=SSID: 
+command=echo "$(LANG=C nmcli d | grep connected  | awk '{print $4}')"
+color=#e07221
+interval=5
+separator=true
+
+[ni]
+command=hostname -I
+interval=100
+
+
+[no]
+command=uname -r
+interval=100
+
+
+[disk]
+label=/
+instance=/
+command=~/.config/i3blocks/./disk.sh
+color=#96c6f8
+interval=30
+
+
+[battery-plus]
+command=/home/andrea/.config/i3blocks/battery.sh
+markup=pango
+instance=BAT0
+interval=30
+
+[volume-pulseaudio]
+label=Vol:
+command=~/.config/i3blocks/./volume.sh
+color=#208273
+instance=Master
+interval=1
+
+[time]
+instance=nc
+TZ=Europe/London
+command=date
+interval=5
+
