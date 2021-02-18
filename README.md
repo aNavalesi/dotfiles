@@ -1,5 +1,6 @@
 # dotfiles
 bash neovim and i3 dotfiles
+
 Used software:
 gnu light
 feh
