@@ -2,9 +2,8 @@
 bash neovim and i3 dotfiles
 
 Used software:
-gnu light
+gnu-light
 feh
 rofi
-xfce4-terminal
 xfce4-screenshooter
 xfce4-terminal
