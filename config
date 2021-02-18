@@ -9,13 +9,9 @@ bindsym $mod+a exec rofi -modi drun -show drun -line-padding 4 \
                 -columns 2 -padding 50 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Sweet-Dark" -font "Droid Sans Regular 10"
 
-
-
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper.jpg
 
 exec_always ~/.i3expo-ng/i3expod.py -w /home/andrea/Pictures/wallpaper.jpg
-
-bindsym $mod+Tab exec --no-startup-id "killall -s SIGUSR1 i3expod.py
 
 gaps inner 2
 gaps outer 1
