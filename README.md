@@ -1,5 +1,5 @@
 # dotfiles
-bash neovim and i3 dotfiles
+i3 dotfiles
 
 Used software:
 gnu-light
