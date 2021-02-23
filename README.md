@@ -6,4 +6,3 @@ gnu-light
 feh
 rofi
 xfce4-screenshooter
-xfce4-terminal
