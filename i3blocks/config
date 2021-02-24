@@ -1,8 +1,3 @@
-[yes]
-full_text=Slackware Current | i3-gaps
-
-
-
 
 [net]
 label=SSID: 
@@ -11,14 +6,6 @@ color=#e07221
 interval=5
 separator=true
 
-[ni]
-command=hostname -I
-interval=100
-
-
-[no]
-command=uname -r
-interval=100
 
 
 [disk]
@@ -30,7 +17,7 @@ interval=30
 
 
 [battery-plus]
-command=~/.config/i3blocks/battery.sh
+command=/home/andrea/.config/i3blocks/battery.sh
 markup=pango
 instance=BAT0
 interval=30
