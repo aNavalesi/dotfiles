@@ -24,7 +24,6 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1
 
 
 bindsym --release Print exec xfce4-screenshooter
-bindsym $mod+Shift+m exec xfce4-terminal --command=mc
 
 exec --no-startup-id setxkbmap it
 exec --no-startup-id light -S 6
@@ -63,7 +62,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec kitty
-bindsym $mod+Tab exec ~/./.Cool-Retro-Term-1.1.1-x86_64.AppImage
+bindsym $mod+Shift+Return exec ~/./.Cool-Retro-Term-1.1.1-x86_64.AppImage
 bindsym $mod+Shift+w exec firefox
 
 # kill focused window
