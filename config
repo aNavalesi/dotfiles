@@ -5,28 +5,34 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+
+
+exec --no-startup-id emacs --daemon
 bindsym $mod+a exec rofi -modi drun -show drun -line-padding 4 \
                 -columns 2 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Sweet-Dark" -font "Droid Sans Regular 10"
+                -show-icons -drun-icon-theme "Papirus" -font "Droid Sans Regular 10"
+
+bindsym $mod+Shift+a exec rofi -modi drun -show drun -line-padding 4 \
+                -columns 2 -padding 50 -hide-scrollbar \
+                -show-icons -drun-icon-theme "Papirus" -font "Droid Sans Regular 10" -theme arthur
+
+bindsym $mod+x exec emacs
+bindsym $mod+Shift+x exec fastemacs
 
 
-exec --no-startup-id tlp start
-exec --no-startup-id powertop --auto-tune
-exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper.jpg
 exec --no-startup-id picom
-
 
 gaps inner 7
 gaps outer 0
 
 bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1
-
+exec --no-startup-id nitrogen --set-scaled ~/media/wallpaper.jpg --head=0
 
 bindsym --release Print exec xfce4-screenshooter
 
 exec --no-startup-id setxkbmap it
-exec --no-startup-id light -S 6
+exec --no-startup-id light -S 5
 
 # i3 config file (v4)
 #
@@ -62,7 +68,6 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec kitty
-bindsym $mod+Shift+Return exec ~/./.Cool-Retro-Term-1.1.1-x86_64.AppImage
 bindsym $mod+Shift+w exec firefox
 
 # kill focused window
