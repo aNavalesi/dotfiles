@@ -1,14 +1,24 @@
+[kernel]
+command=uname -r
+label=
+interval=20
+color=#ffffff
+
 [net]
-label=SSID: 
+label= 
 command=echo "$(LANG=C nmcli d | grep connected  | awk '{print $4}')"
 color=#e07221
 interval=5
 separator=true
 
-
+[temperature]
+command=~/.config/i3blocks/temperature.perl
+label=
+interval=5
+color=#f5f40a
 
 [disk]
-label=/
+label=
 instance=/
 command=~/.config/i3blocks/./disk.sh
 color=#96c6f8
@@ -21,14 +31,23 @@ markup=pango
 instance=BAT0
 interval=30
 
+
+
 [volume-pulseaudio]
-label=Vol:
+label=
 command=~/.config/i3blocks/./volume.sh
 color=#208273
 instance=Master
 interval=1
 
+[logout]
+full_text=
+color=#ff000
+command= i3-msg exit
+
+
 [time]
+label=
 instance=nc
 TZ=Europe/Rome
 command=date
