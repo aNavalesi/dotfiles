@@ -3,7 +3,7 @@ i3 dotfiles
 
 Used software:
 gnu-light
-feh
+nitrogen
 rofi
 xfce4-screenshooter
 
