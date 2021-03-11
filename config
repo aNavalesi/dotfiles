@@ -12,7 +12,7 @@ exec --no-startup-id emacs --daemon
 
 bindsym XF86Search exec rofi -modi drun -show drun -line-padding 4 \
                 -columns 2 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Papirus" -font "Droid Sans Regular 9" -theme .nord 
+                -show-icons -drun-icon-theme "Papirus" -font "Droid Sans Regular 10" -theme .nord 
 
 
 client.focused #222222 #222222 #222222 #222222     #222222
