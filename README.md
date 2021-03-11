@@ -10,4 +10,4 @@ Thanks to the [endeavouros i3](https://github.com/endeavouros-team/endeavouros-i
 
 _Some screenshots_
 
-![](screenshot1)
+![1](screenshot1)
