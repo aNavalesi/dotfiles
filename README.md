@@ -12,4 +12,3 @@ _Some screenshots_
 
 ![1](screenshot1.png)
 
-![2](screenshot3.png)
