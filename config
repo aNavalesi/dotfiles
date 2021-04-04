@@ -4,38 +4,25 @@
 # Should you change your keyboard layout some time, delete
 # this file and re-run i3-config-wizard(1).
 #
-
-
-
-exec --no-startup-id ~/.i3-alternating-layout/./alternating_layouts.py 
-exec --no-startup-id emacs --daemon
-
-bindsym XF86Search exec rofi -modi drun -show drun -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar \
-                -show-icons -drun-icon-theme "Papirus" -font "Droid Sans Regular 10" -theme .nord 
-
-
 client.focused #222222 #222222 #222222 #222222     #222222
 
-bindsym $mod+Shift+b exec kitty -e bash .bat
+bindsym $mod+Shift+b exec kitty -e bash ~/usr/oms/startupg
 
-bindsym $mod+x exec emacs
-bindsym $mod+Shift+x exec fastemacs
+exec --no-startup-id xset r rate 150
 
+bindsym $mod+x exec emacsclient -c
 
 exec --no-startup-id picom
+exec --no-startup-id emacs --daemon
 
 #gaps inner 7
 #gaps outer 0
 
-bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1
-bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1
-exec --no-startup-id nitrogen --set-scaled ~/media/wallpaper.jpg --head=0
+exec --no-startup-id nitrogen --set-scaled ~/media/pix/wall/wallpaper2.jpg --head=0
 
 bindsym --release Print exec xfce4-screenshooter
 
 exec --no-startup-id setxkbmap it
-exec --no-startup-id light -S 5
 
 # i3 config file (v4)
 #
@@ -63,8 +50,8 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty -e fish
-bindsym $mod+Shift+w exec firefox
+bindsym $mod+Return exec kitty -e zsh
+bindsym $mod+Shift+w exec brave
 
 # kill focused window
 bindsym $mod+q kill
@@ -121,6 +108,7 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+space floating toggle
 
+exec --no-startup-id setxkbmap -option "caps:swapescape"
 
 # focus the child container
 #bindsym $mod+d focus child
