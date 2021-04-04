@@ -12,7 +12,7 @@ interval=5
 separator=true
 
 [temperature]
-command=~/.config/i3blocks/temperature.perl
+command=cat /sys/class/thermal/thermal_zone1/temp
 label=
 interval=5
 color=#f5f40a
@@ -25,10 +25,9 @@ color=#96c6f8
 interval=30
 
 
-[battery-plus]
-command=/home/andrea/.config/i3blocks/battery.sh
-markup=pango
-instance=BAT0
+[battery]
+label=
+command=cat /sys/class/power_supply/BAT0/capacity
 interval=30
 
 
@@ -52,4 +51,3 @@ instance=nc
 TZ=Europe/Rome
 command=date
 interval=5
-
