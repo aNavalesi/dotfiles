@@ -13,10 +13,7 @@ bindsym $mod+x exec --no-startup-id emacsclient -c
 exec --no-startup-id picom
 exec --no-startup-id emacs --daemon
 
-gaps inner 15
-gaps outer 0
-
-exec --no-startup-id nitrogen --set-scaled ~/media/pix/wall/wallpaper.png --head=0
+exec --no-startup-id feh --bg-scale '~/media/pix/wall/wallpaper.jpg'
 
 bindsym --release Print exec --no-startup-id scrot ~/screenshot.png
 
@@ -48,7 +45,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id st
+bindsym $mod+Return exec --no-startup-id kitty 
 bindsym $mod+Shift+Return exec --no-startup-id urxvt -e float  
 bindsym $mod+w exec brave 
 
@@ -91,10 +88,8 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+v split h
 
 
-bindsym $mod+Shift+plus  gaps inner all plus 5
-bindsym $mod+Shift+minus gaps inner all minus 5
-bindsym $mod+plus gaps inner all plus 5
-bindsym $mod+minus gaps inner all minus 5
+bindsym $mod+Shift+plus  gaps inner plus 5
+bindsym $mod+Shift+minus gaps inner minus 5
 
 # split in vertical orientation
 bindsym $mod+h split v
@@ -110,7 +105,7 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+space floating toggle
 
-exec --no-startup-id setxkbmap -option "caps:swapescape"
+exec --no-startup-id setxkbmap -option "ctrl:nocaps"
 
 # focus the child container
 #bindsym $mod+d focus child
