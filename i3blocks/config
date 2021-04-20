@@ -1,3 +1,7 @@
+
+[screen]
+command=scrot ~/screenshot.png
+full_text=
 [kernel]
 command=uname -r
 label=
@@ -34,15 +38,14 @@ interval=30
 
 [volume-pulseaudio]
 label=
-command=~/.config/i3blocks/./volume.sh
+command= pamixer --get-volume
 color=#208273
-instance=Master
 interval=1
 
 [logout]
-full_text=
+full_text=
 color=#ff000
-command= i3-msg exit
+command= poweroff 
 
 
 [time]
