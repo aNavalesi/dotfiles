@@ -13,8 +13,8 @@ bindsym $mod+x exec --no-startup-id emacsclient -c
 exec --no-startup-id picom
 exec --no-startup-id emacs --daemon
 
-#gaps inner 7
-#gaps outer 0
+gaps inner 15
+gaps outer 0
 
 exec --no-startup-id nitrogen --set-scaled ~/media/pix/wall/wallpaper.png --head=0
 
@@ -49,7 +49,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id st
-bindsym $mod+Shift+Return exec --no-startup-id urxvt  
+bindsym $mod+Shift+Return exec --no-startup-id urxvt -e float  
 bindsym $mod+w exec brave 
 
 # kill focused window
@@ -61,7 +61,7 @@ bindsym $mod+q kill
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+a exec --no-startup-id rofi -modi drun -show drun -line-padding 4 -theme solarized_alternate -columns 2 -padding 50 -hide-scrollbar -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 13"
 bindsym $mod+Tab exec --no-startup-id  rofi -show windowcd -theme solarized_alternate -columns 2 -padding 50 -hide-scrollbar -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 13"
-
+bindsym $mod+Shift+f exec --no-startup-id rofi -show file-browser -theme solarized_alternate -columns 2 -padding 50 -hide-scrollbar -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 13"
 
 # change focus
 bindsym $mod+j focus left
@@ -188,7 +188,7 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+b exec --no-startup-id i3-msg bar mode hide
 bindsym $mod+Shift+p exec i3-msg bar mode dock
-exec --no-startup-id alternating_layouts
+exec --no-startup-id i3_master
 exec --no-startup-id server-play-with-mpv
 
 

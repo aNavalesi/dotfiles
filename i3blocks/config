@@ -18,7 +18,7 @@ separator=true
 [temperature]
 command=cat /sys/class/thermal/thermal_zone1/temp
 label=
-interval=5
+interval=1
 color=#f5f40a
 
 [disk]
@@ -32,8 +32,8 @@ interval=30
 [battery]
 label=
 command=cat /sys/class/power_supply/BAT0/capacity
-interval=30
-
+interval=15
+color=#00ff00
 
 
 [volume-pulseaudio]
@@ -42,7 +42,7 @@ command= pamixer --get-volume
 color=#208273
 interval=1
 
-[logout]
+[poweroff]
 full_text=
 color=#ff000
 command= poweroff 
@@ -54,3 +54,4 @@ instance=nc
 TZ=Europe/Rome
 command=date
 interval=5
+color=#fffff
